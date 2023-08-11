@@ -75,7 +75,13 @@ h2 {
 
 p {
   font-family: 'Work Sans', sans-serif;
-  line-height: 1.5;
+  line-height: 1.5em;
+}
+
+.caption {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 14px;
+  color: gray;
 }
 
 label {
