@@ -15,6 +15,13 @@
   font-style: normal;
 }
 
+.cursive {
+  font-family: 'Matchstick-italic';
+}
+.regular {
+  font-family: 'Matchstick-regular';
+}
+
 .topnav {
   /* background-color: #333; */
   overflow: hidden;
@@ -77,6 +84,7 @@ label {
 
 input {
   box-sizing:border-box;
+  background-color: #FFFDF4;
   padding: 8px;
   margin: 8px 0;
   width: 100%;
