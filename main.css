@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Work+Sans:wght@300&display=swap');
+/*---- FONTS ----*/
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600&display=swap');
 
 @font-face {
   font-family: 'Matchstick-italic';
@@ -17,23 +18,29 @@
 
 .cursive {
   font-family: 'Matchstick-italic';
+  font-weight: 200;
 }
 .regular {
   font-family: 'Matchstick-regular';
+  font-weight: 200;
 }
+
+/*---- NAV ----*/
 
 .topnav {
   /* background-color: #333; */
   overflow: hidden;
+  padding-bottom: 32px;
 }
 
 .topnav a {
   font-family: 'Work Sans', sans-serif;
+  font-weight: 200;
   font-size: 16px;
   float: left;
   color: #000000;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 24px 14px 0px;
   text-decoration: none;
 }
 
@@ -46,43 +53,70 @@
 /* Add a color to the active/current link */
 .topnav a.active {
   color: #000000;
-  font-weight: bold; /* not sure if this is correct? */
+  font-weight: 400;
 }
 
+/*---- LAYOUT ----*/
+
 body {
-  background-color: #FFFDF4;
-  padding: 3% 30% 10% 30%;
+  background-color: #FFFEF9;
+  padding: 2% 5% 5% 5%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(480px, 100%), 1fr));
+  grid-gap: 3em;
 }
 
 img {
-  width: 25%;
+  width: 100%;
+}
+
+.block {
+  padding: 16px 0;
 }
 
 /*---- TYPOGRAPHY ----*/
 
-h1 {
+h1 { /*home page only*/
   font-family: 'Matchstick-Italic', sans-serif;
-  font-size: 6em;
+  font-size: 5.5em;
   margin: 16px 0px;
+  line-height: 1em;
+  font-weight: 200;
 }
 
-h2 {
-  font-family: 'Matchstick-Italic', sans-serif;
+h2 { /*page titles*/
+  font-family: 'Matchstick-regular', sans-serif;
   font-size: 4em;
-  margin: 16px 0px;
-  line-height: 1.2em;
+  font-weight: 200;
+  margin: 0 0 24px 0;
+  line-height: 1em;
+}
+
+h3 { /*wedding party and faq*/
+  font-family: 'Matchstick-regular', sans-serif;
+  font-weight: 200;
+  font-size: 1.5em;
+  margin: 8px 0px 4px 0px;
+}
+
+.party-caption { /*wedding party*/
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  margin: 0;
 }
 
 p {
   font-family: 'Work Sans', sans-serif;
+  font-weight: 200;
   line-height: 1.5em;
+  margin: 8px 0px 16px 0px;
 }
 
-.caption {
-  font-family: 'Work Sans', sans-serif;
-  font-size: 14px;
-  color: gray;
-}
+/*---- FORM ----*/
 
 label {
   font-family: 'Work Sans', sans-serif;
@@ -107,7 +141,6 @@ input::placeholder {
 button {
   padding: 12px 16px;
   background-color: #D9EDC0;
-  /*border: 1px #424040 solid;*/
   color: #000000;
   border: none;
   text-align: center;
@@ -118,17 +151,6 @@ button {
 button:hover {
   background-color: #BEDC97;
   cursor: grab;
-}
-
-/*---- SPACING ----*/
-
-.input {
-  padding: 8px 0;
-}
-
-.spacer {
-  display: flex;
-  height: 16px;
 }
 
 /*---- MEDIA QUERIES ----*/
