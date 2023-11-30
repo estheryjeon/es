@@ -65,8 +65,8 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(480px, 100%), 1fr));
-  grid-gap: 3em;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  grid-gap: 2em;
 }
 
 img {
