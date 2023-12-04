@@ -9,106 +9,127 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="main.css" rel="stylesheet" type="text/css">
+  <script src="main.js"></script>
 </head>
 
 <body>
-    <div class="topnav">
-        <a href="index.html">Home</a>
-        <a href="story.html">Story</a>
-        <a href="photos.html">Photos</a>
-        <a class="active" href="wedding-party.html">Wedding Party</a>
-        <a href="schedule.html">Schedule</a>
-        <a href="travel.html">Travel</a>
-        <a href="registry.html">Registry</a>
-        <a href="faq.html">FAQs</a>
-    </div>
+    <header>
+        <label class="logo"><a class="active cursive" href="index.html">E&S</a></label>
+        <button onclick="openMenu()" id="menubtn"><img class="icon" src="assets/bar.svg"></button>  
+        <div id="desktop-nav">
+            <ul>
+                <li><a href="story.html">Story</a></li>
+                <li><a href="photos.html">Photos</a></li>
+                <li><a href="wedding-party.html">Wedding Party</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="travel.html">Travel</a></li>
+                <li><a href="registry.html">Registry</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+            </ul>
+        </div>  
+    </header> 
 
-    <div class="grid-container">
-        <div class="block">
-            <img class="party-photos" src="assets/est.png" alt="">
-            <h3>Esther Jeon</h3>
-            <p class="party-caption">Bride</p>
+    <div id="mobile-nav">
+        <label class="logo"><a class="active cursive" href="index.html">E&S</a></label>
+        <button onclick="closeMenu()" id="close"><img class="icon" src="assets/close.svg"></button>
+        <ul>
+            <li><a href="story.html">Story</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li><a href="wedding-party.html">Wedding Party</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="travel.html">Travel</a></li>
+            <li><a href="registry.html">Registry</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+        </ul>
+    </div> 
+
+    <main>
+        <div class="grid-container">
+            <div class="block">
+                <img class="party-photos" src="assets/est.png" alt="">
+                <h3>Esther Jeon</h3>
+                <p class="party-caption">Bride</p>
+            </div>
+            <div class="block">
+                <img class="party-photos" src="assets/soonho.png" alt="">
+                <h3>Soonho Kwon</h3>
+                <p class="party-caption">Groom</p>
+            </div>
         </div>
-        <div class="block">
-            <img class="party-photos" src="assets/soonho.png" alt="">
-            <h3>Soonho Kwon</h3>
-            <p class="party-caption">Groom</p>
+        <div class="grid-container">
+            <div class="block"> <!--Joanna-->
+                <img class="party-photos" src="assets/joanna.png" alt="">
+                <h3>Joanna Xue</h3>
+                <p class="party-caption">Matron of Honor</p>
+            </div>
+            <div class="block"> <!--Brian-->
+                <img class="party-photos" src="assets/brian.png" alt="">
+                <h3>Brian Tao</h3>
+                <p class="party-caption">Best man</p>
+            </div>
         </div>
-    </div>
-    <div class="grid-container">
-        <div class="block"> <!--Joanna-->
-            <img class="party-photos" src="assets/joanna.png" alt="">
-            <h3>Joanna Xue</h3>
-            <p class="party-caption">Matron of Honor</p>
+        <div class="grid-container">
+            <div class="block"> <!--Sus-->
+                <img class="party-photos" src="assets/susie.png" alt="">
+                <h3>Susanna Cha</h3>
+                <p class="party-caption">Bridesmaid</p>
+            </div>
+            <div class="block"> <!--Jiwan-->
+                <img class="party-photos" src="assets/jiwan.png" alt="">
+                <h3>Jiwan Kang</h3>
+                <p class="party-caption">Groomsman</p>
+            </div>
         </div>
-        <div class="block"> <!--Brian-->
-            <img class="party-photos" src="assets/brian.png" alt="">
-            <h3>Brian Tao</h3>
-            <p class="party-caption">Best man</p>
+        <div class="grid-container">
+            <div class="block"> <!--Hilary-->
+                <img class="party-photos" src="assets/hilary.png" alt="">
+                <h3>Hilary Lai</h3>
+                <p class="party-caption">Bridesmaid</p>
+            </div>
+            <div class="block"> <!--Eric-->
+                <img class="party-photos" src="assets/eric.png" alt="">
+                <h3>Eric Wong</h3>
+                <p class="party-caption">Groomsman</p>
+            </div> 
         </div>
-    </div>
-    <div class="grid-container">
-        <div class="block"> <!--Sus-->
-            <img class="party-photos" src="assets/susie.png" alt="">
-            <h3>Susanna Cha</h3>
-            <p class="party-caption">Bridesmaid</p>
+        <div class="grid-container">
+            <div class="block"> <!--Grace-->
+                <img class="party-photos" src="assets/grace.png" alt="">
+                <h3>Grace Cho</h3>
+                <p class="party-caption">Bridesmaid</p>
+            </div>
+            <div class="block"> <!--Frank-->
+                <img class="party-photos" src="assets/frank.png" alt="">
+                <h3>Frank Lee</h3>
+                <p class="party-caption">Groomsman</p>
+            </div>
         </div>
-        <div class="block"> <!--Jiwan-->
-            <img class="party-photos" src="assets/jiwan.png" alt="">
-            <h3>Jiwan Kang</h3>
-            <p class="party-caption">Groomsman</p>
+        <div class="grid-container">
+            <div class="block"> <!--Som-->
+                <img class="party-photos" src="assets/somina.png" alt="">
+                <h3>Somina Lee</h3>
+                <p class="party-caption">Bridesmaid</p>
+            </div>
+            <div class="block"> <!--Junseo-->
+                <img class="party-photos" src="assets/junseo.png" alt="">
+                <h3>Junseo Park</h3>
+                <p class="party-caption">Groomsman</p>
+            </div>
         </div>
-    </div>
-    <div class="grid-container">
-        <div class="block"> <!--Hilary-->
-            <img class="party-photos" src="assets/hilary.png" alt="">
-            <h3>Hilary Lai</h3>
-            <p class="party-caption">Bridesmaid</p>
+        <div class="grid-container">
+            <div class="block"> <!--Julie-->
+                <img class="party-photos" src="assets/julie.png" alt="">
+                <h3>Julie Joo</h3>
+                <p class="party-caption">Bridesmaid</p>
+            </div>
+            <div class="block"> <!--Michael-->
+                <img class="party-photos" src="assets/michael.png" alt="">
+                <h3>Michael Chung</h3>
+                <p class="party-caption">Groomsman</p>
+            </div>
         </div>
-        <div class="block"> <!--Eric-->
-            <img class="party-photos" src="assets/eric.png" alt="">
-            <h3>Eric Wong</h3>
-            <p class="party-caption">Groomsman</p>
-        </div> 
-    </div>
-    <div class="grid-container">
-        <div class="block"> <!--Grace-->
-            <img class="party-photos" src="assets/grace.png" alt="">
-            <h3>Grace Cho</h3>
-            <p class="party-caption">Bridesmaid</p>
-        </div>
-        <div class="block"> <!--Frank-->
-            <img class="party-photos" src="assets/frank.png" alt="">
-            <h3>Frank Lee</h3>
-            <p class="party-caption">Groomsman</p>
-        </div>
-    </div>
-    <div class="grid-container">
-        <div class="block"> <!--Som-->
-            <img class="party-photos" src="assets/somina.png" alt="">
-            <h3>Somina Lee</h3>
-            <p class="party-caption">Bridesmaid</p>
-        </div>
-        <div class="block"> <!--Junseo-->
-            <img class="party-photos" src="assets/junseo.png" alt="">
-            <h3>Junseo Park</h3>
-            <p class="party-caption">Groomsman</p>
-        </div>
-    </div>
-    <div class="grid-container">
-        <div class="block"> <!--Julie-->
-            <img class="party-photos" src="assets/julie.png" alt="">
-            <h3>Julie Joo</h3>
-            <p class="party-caption">Bridesmaid</p>
-        </div>
-        <div class="block"> <!--Michael-->
-            <img class="party-photos" src="assets/michael.png" alt="">
-            <h3>Michael Chung</h3>
-            <p class="party-caption">Groomsman</p>
-        </div>
-    </div>
+    </main>
     
-
 </body>
 
 </html>

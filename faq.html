@@ -9,59 +9,81 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="main.css" rel="stylesheet" type="text/css">
+  <script src="main.js"></script>
 </head>
 
 <body>
-    <div class="topnav">
-        <a href="index.html">Home</a>
-        <a href="story.html">Story</a>
-        <a href="photos.html">Photos</a>
-        <a href="wedding-party.html">Wedding Party</a>
-        <a href="schedule.html">Schedule</a>
-        <a href="travel.html">Travel</a>
-        <a href="registry.html">Registry</a>
-        <a class="active" href="faq.html">FAQs</a>
-    </div>
+    <header>
+        <label class="logo"><a class="active cursive" href="index.html">E&S</a></label>
+        <button onclick="openMenu()" id="menubtn"><img class="icon" src="assets/bar.svg"></button>  
+        <div id="desktop-nav">
+            <ul>
+                <li><a href="story.html">Story</a></li>
+                <li><a href="photos.html">Photos</a></li>
+                <li><a href="wedding-party.html">Wedding Party</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="travel.html">Travel</a></li>
+                <li><a href="registry.html">Registry</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+            </ul>
+        </div>  
+    </header> 
 
-    <div class="grid-container">
-        <h2>FAQs</h2>
-        <div>
-            <div class="block">
-                <h3>Will the wedding be indoors or outdoors?</h3>
-                <p>The ceremony will be outdoors and the reception will be indoors. In case of inclement weather, both will be held indoors.</p>
-            </div>
-            <div class="block">
-                <h3>Is there a recommended hotel?</h3>
-                <p>Yes! We're finalizing a hotel block. We'll update everyone with it soon!</p>
-            </div>
-            <div class="block">
-                <h3>Can I bring a date?</h3>
-                <p>Please refer to your invitation for other guests. We want to keep this intimate and won't be able to accomodate additional guests.
-                    If you have any questions, feel free to contact Esther or Soonho.</p>
-            </div>
-            <div class="block">
-                <h3>What time should I arrive?</h3>
-                <p>The ceremony will start promptly at 4:30pm. Please arrive early for parking and finding seats.</p>
-            </div>
-            <div class="block">
-                <h3>What will the weather be like?</h3>
-                <p>The temperature is typically in the 60s in April. It will likely get chillier as the sun sets. We recommend bringing a light jacket.</p>
-            </div>
-            <div class="block">
-                <h3>How bad is the Bay Bridge traffic?</h3>
-                <p>It’s pretty bad. We recommend budgeting 1 hour if you’re driving from San Francisco.</p>
-            </div>
-            <div class="block">
-                <h3>What is the parking situation?</h3>
-                <p>There is a parking lot right in front of the venue for about 40 cars. 
-                    If that lot is full, there is plenty of street parking.</p>
-            </div>
-            <div class="block">
-                <h3>I have more questions! Who should I ask?</h3>
-                <p>Contact either Soonho or Esther.</p>
+    <div id="mobile-nav">
+        <label class="logo"><a class="active cursive" href="index.html">E&S</a></label>
+        <button onclick="closeMenu()" id="close"><img class="icon" src="assets/close.svg"></button>
+        <ul>
+            <li><a href="story.html">Story</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li><a href="wedding-party.html">Wedding Party</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="travel.html">Travel</a></li>
+            <li><a href="registry.html">Registry</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+        </ul>
+    </div> 
+
+    <main>
+        <div class="grid-container">
+            <h2>FAQs</h2>
+            <div>
+                <div class="block">
+                    <h3>Will the wedding be indoors or outdoors?</h3>
+                    <p>The ceremony will be outdoors and the reception will be indoors. In case of inclement weather, both will be held indoors.</p>
+                </div>
+                <div class="block">
+                    <h3>Is there a recommended hotel?</h3>
+                    <p>Yes! We're finalizing a hotel block. We'll update everyone with it soon!</p>
+                </div>
+                <div class="block">
+                    <h3>Can I bring a date?</h3>
+                    <p>Please refer to your invitation for other guests. We want to keep this intimate and won't be able to accomodate additional guests.
+                        If you have any questions, feel free to contact Esther or Soonho.</p>
+                </div>
+                <div class="block">
+                    <h3>What time should I arrive?</h3>
+                    <p>The ceremony will start promptly at 4:30pm. Please arrive early for parking and finding seats.</p>
+                </div>
+                <div class="block">
+                    <h3>What will the weather be like?</h3>
+                    <p>The temperature is typically in the 60s in April. It will likely get chillier as the sun sets. We recommend bringing a light jacket.</p>
+                </div>
+                <div class="block">
+                    <h3>How bad is the Bay Bridge traffic?</h3>
+                    <p>It’s pretty bad. We recommend budgeting 1 hour if you’re driving from San Francisco.</p>
+                </div>
+                <div class="block">
+                    <h3>What is the parking situation?</h3>
+                    <p>There is a parking lot right in front of the venue for about 40 cars. 
+                        If that lot is full, there is plenty of street parking.</p>
+                </div>
+                <div class="block">
+                    <h3>I have more questions! Who should I ask?</h3>
+                    <p>Contact either Soonho or Esther.</p>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
     
 
 </body>
