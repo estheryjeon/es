@@ -5,4 +5,3 @@ function openMenu() {
 function closeMenu() {
     document.getElementById("mobile-nav").style.display = "none";
 }
-
