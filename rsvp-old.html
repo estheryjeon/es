@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>E&S—RSVP</title>
+  <link rel="icon" type="image/x-icon" href="">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="main.css" rel="stylesheet" type="text/css">
+  <script src="main.js"></script>
+</head>
+
+<body>
+    <header>
+        <label class="logo"><a class="active cursive" href="index.html">E&S</a></label>
+        <button onclick="openMenu()" id="menubtn"><img class="icon" src="assets/bar.svg"></button>  
+        <div id="desktop-nav">
+            <ul>
+                <li><a href="story.html">Story</a></li>
+                <li><a href="photos.html">Photos</a></li>
+                <li><a href="wedding-party.html">Wedding Party</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="travel.html">Travel</a></li>
+                <li><a href="registry.html">Registry</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+                <li><button id="rsvpBtn"><a href="rsvp.html">RSVP</a></button></li>
+            </ul>
+        </div>  
+    </header> 
+
+    <div id="mobile-nav">
+        <label class="logo"><a class="active cursive" href="index.html">E&S</a></label>
+        <button onclick="closeMenu()" id="close"><img class="icon" src="assets/close.svg"></button>
+        <ul>
+            <li><a href="story.html">Story</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li><a href="wedding-party.html">Wedding Party</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="travel.html">Travel</a></li>
+            <li><a href="registry.html">Registry</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+            <li><button id="rsvpBtn"><a href="rsvp.html">RSVP</a></button></li>
+        </ul>
+    </div> 
+
+    <main>
+        
+        <div id="formtable">
+            <div id="formrow">
+                <div id="formtablecell">
+                    <div id="formarea">
+                        <h2>RSVP</h2>
+                        <p>
+                            We would love to have you join us for our wedding. We will be having a reception after the ceremony.
+                            Please fill out this little form to let us know if you're coming!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="formtablecell">
+                <div id="formarea">
+                    <form action="https://submit-form.com/1sLFN6d3s">
+                        <input
+                        type="hidden"
+                        name="_feedback.success.title"
+                        value="Thank you!"
+                        />
+                        <input type="hidden" name="_feedback.whitelabel" value="true" />
+                        <input
+                        type="hidden"
+                        name="_feedback.success.message"
+                        value="If you need to edit anything, reach out to Esther or Soonho."
+                        />
+
+                        <div class="input">
+                            <label for="name">Full name</label><br>
+                            <input type="text" id="name" name="1-name" placeholder="" required="" />
+                        </div>
+                        <div class="input">
+                            <label for="email">Email</label><br>
+                            <input type="email" id="email" name="2-email" placeholder="" required="" />
+                        </div>
+                        <div class="input">
+                            <label for="rsvp">RSVP</label><br>
+                            <input type="checkbox" name="yes" value="yes" /> Joyfully accept.
+                            <input type="checkbox" name="no" value="no" /> Regrettably decline.
+                        </div>
+                        <div class="input">
+                            <label for="dinner">Dinner selection</label><br>
+                            <input type="radio" name="dinner" value="miso-glazed salmon" checked /> Miso-glazed salmon
+                            <input type="radio" name="dinner" value="shrimp fettucini" /> Shrimp fettuccini
+                            <input type="radio" name="dinner" value="short rib with merlot" /> Short rib with merlot
+                        </div>
+                        <div class="input">
+                            <label for="message">Do you have any dietary restrictions?</label><br>
+                            <input type="text" id="dietary" name="4-dietary" placeholder="" required="" />
+                        </div>
+                        <span class="spacer"></span>
+                        <button type="submit">Submit</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
