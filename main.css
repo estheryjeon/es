@@ -103,7 +103,7 @@ nav a:hover {
 
 /* Add a color to the active/current link */
 nav a.active {
-  color: ##898989;
+  color: #898989;
   font-weight: 400;
 }
 
@@ -173,31 +173,66 @@ p {
   margin: 8px 0px 8px 0px;
 }
 
+.bold {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+}
+
+.p-links {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 200;
+  line-height: 1.5em;
+  margin: 8px 0px 8px 0px;
+  text-decoration: underline;
+}
+
 /*---- FORM ----*/
 
 label {
   font-family: 'Work Sans', sans-serif;
   font-weight: 300;
   font-size: 16px;
+  padding-bottom: 16px;
 }
 
-input {
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 8px 0;
+input::placeholder {
+  color: #787878;
+}
+
+.option-text {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.option {
+  padding: 16px;
+  margin-top: 8px;
+  border-radius: 4px;
+  border: 1px solid #C7C7C7;
+  vertical-align: top;
+}
+
+.question {
+  padding-bottom: 24px;
+}
+
+.text-box {
   width: 100%;
   border-radius: 4px;
   border: 1px solid #C7C7C7;
   font-family: 'Work Sans', sans-serif;
   font-size: 16px;
-} 
-input::placeholder {
-  color: #787878;
+  padding: 8px;
+  margin: 8px 0;
 }
 
-input[type=checkbox] {
-  font-family: 'Work Sans', sans-serif;
-  font-size: 16px;
+.question > * {
+  width: 100%;
+}
+
+.question label {
+  padding-bottom: 8px;
 }
 
 button {
@@ -208,12 +243,17 @@ button {
   border-radius: 0.5em;
   font-family: 'Work Sans', sans-serif;
   font-size: 16px;
-  font-weight: 200;
+  font-weight: 300;
   margin-bottom: 8px;
 }
 
 button:hover {
   cursor: grab;
+}
+
+.big-button {
+  margin-right: 16px;
+  padding: 8px 24px;
 }
 
 #mobile-nav #rsvpBtn {

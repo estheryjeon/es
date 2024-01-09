@@ -45,21 +45,23 @@
     </div> 
 
     <main>
-        
-        <div id="formtable">
-            <div id="formrow">
-                <div id="formtablecell">
-                    <div id="formarea">
-                        <h2>RSVP</h2>
-                        <p>
-                            We would love to have you join us for our wedding. We will be having a reception after the ceremony.
-                            Please fill out this little form to let us know if you're coming!
-                        </p>
-                    </div>
+        <div class="grid-container">
+            <h2>RSVP</h2>
+            <div>
+                <div class="block">
+                    <p>
+                        We would love to have you join us for our wedding.
+                        Please fill out this little form to let us know if you're coming!
+                    </p>
+                    <p class="bold">
+                        Please submit a form for each person in your party. Your party members are those on your invitation.
+                        We cannot accomodate any guests that are not on your invitation. Thanks for understanding!
+                    </p>
+                    <p>
+                        If the form is hanging after pressing submit, please wait a few hours to try again.
+                    </p>
                 </div>
-            </div>
-            <div id="formtablecell">
-                <div id="formarea">
+                <div class="block">
                     <form action="https://submit-form.com/1sLFN6d3s">
                         <input
                         type="hidden"
@@ -73,36 +75,54 @@
                         value="If you need to edit anything, reach out to Esther or Soonho."
                         />
 
-                        <div class="input">
-                            <label for="name">Full name</label><br>
-                            <input type="text" id="name" name="1-name" placeholder="" required="" />
+                        <div class="question">
+                            <label class="bold" for="name">Full name</label>
+                            <input class="text-box" type="text" id="name" name="1-name" placeholder="" required="" />
                         </div>
-                        <div class="input">
-                            <label for="email">Email</label><br>
-                            <input type="email" id="email" name="2-email" placeholder="" required="" />
+                        <div class="question">
+                            <label class="bold" for="email">Email</label>
+                            <input class="text-box" type="email" id="email" name="2-email" placeholder="" required="" />
                         </div>
-                        <div class="input">
-                            <label for="rsvp">RSVP</label><br>
-                            <input type="checkbox" name="yes" value="yes" /> Joyfully accept.
-                            <input type="checkbox" name="no" value="no" /> Regrettably decline.
+                        <div class="question">
+                            <label class="bold" for="rsvp">Will you be attending?</label>
+                            <div class="option"><input type="radio" name="3-attending" value="yes" id="yes" checked/>
+                                <label for="yes">Yes, I joyfully accept.</label></div>
+                            <div class="option"><input type="radio" name="3-attending" value="no" id="no"/> 
+                                <label for="no">No, I regrettably decline.</label></div>
                         </div>
-                        <div class="input">
-                            <label for="dinner">Dinner selection</label><br>
-                            <input type="radio" name="dinner" value="miso-glazed salmon" checked /> Miso-glazed salmon
-                            <input type="radio" name="dinner" value="shrimp fettucini" /> Shrimp fettuccini
-                            <input type="radio" name="dinner" value="short rib with merlot" /> Short rib with merlot
+                        <div class="question">
+                            <label class="bold" for="dinner">Select a dinner option:</label>
+                            <div class="option"><input type="radio" name="4-dinner" value="miso-glazed salmon" id="salmon" checked/> 
+                                <label for="salmon">Miso Glazed Salmon with Mushroom Saffron Rice and Brussel Sprouts</label></div>
+                            <div class="option"><input type="radio" name="4-dinner" value="short rib with merlot" id="rib"/> 
+                                <label for="rib">Merlot Glazed Boneless Braised Short Ribs with Mushroom Saffron Rice and Brussel Sprouts</label></div>
+                            <div class="option"><input type="radio" name="4-dinner" value="shrimp fettucini" id="shrimp"/>
+                                <label for="shrimp">Shrimp Fettuccini with Mushrooms, White Wine, Lemon, Garlic, Fresh Herbs</label></div>
                         </div>
-                        <div class="input">
-                            <label for="message">Do you have any dietary restrictions?</label><br>
-                            <input type="text" id="dietary" name="4-dietary" placeholder="" required="" />
+                        <div class="question">
+                            <label class="bold" for="dietary">Do you have any dietary restrictions?</label>
+                            <input class="text-box" type="text" id="dietary" name="4-dietary" placeholder="" required="" />
                         </div>
-                        <span class="spacer"></span>
+                        <div class="question">
+                            <label class="bold" for="hotel">Will you be staying at our hotel block at the Sonesta Emeryville?</label>
+                            <div class="option"><input type="radio" name="5-hotel" value="yes" id="yes-hotel" checked/>
+                                <label for="yes-hotel">Yes, I've booked my room.</label></div>
+                            <div class="option"><input type="radio" name="5-hotel" value="no" id="no-hotel"/> 
+                                <label for="no-hotel">No, I will be staying elsewhere.</label></div>
+                            <div class="option"><input type="radio" name="5-hotel" value="local" id="local-hotel"/> 
+                                <label for="local-hotel">I don't need a hotel.</label></div>
+                        </div>
+                        <div class="question">
+                            <label class="bold" for="song">Tell us your favorite song for the dance floor. 💃</label>
+                            <input class="text-box" type="text" id="song" name="6-song" placeholder="" required="" />
+                        </div>
+
                         <button type="submit">Submit</button>
                     </form>
-
                 </div>
             </div>
         </div>
+
 
     </main>
 
