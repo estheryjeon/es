@@ -19,7 +19,7 @@
             <ul>
                 <li><a href="japanesebreakfast.html">Story</a></li>
                 <li><a href="fuji-minolta.html">Photos</a></li>
-                <li><a href="tearsofthekingdom.html">Wedding Party</a></li>
+                <li><a class="current" href="tearsofthekingdom.html">Wedding Party</a></li>
                 <li><a href="subarucrosstrek.html">Schedule</a></li>
                 <li><a href="whiterastafarian.html">Travel</a></li>
                 <li><a href="potatochips.html">Registry</a></li>
@@ -79,8 +79,17 @@
                 <h3>Susanna Cha</h3>
                 <p class="party-caption">Bridesmaid</p>
                 <p>It all started with a post on Facebook’s “Penn Roommate Connect Class of 2019 (Females)” group.</p>
-                <button>Read more</button>
+                <button onclick="openModal('susieModal')">Read more</button>
             </div>
+
+            <div id="susieModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span onclick="closeModal('susieModal')" class="close">&times;</span>
+                  <p>It all started with a post on Facebook’s “Penn Roommate Connect Class of 2019 (Females)” group. An Esther Jeon from Dallas was looking for a roommate and it was love at first post! Esther and Susanna exchanged some cringey messages (lol at our freshman selves est) and ended up rooming together all of freshman year and have been close ever since. Though they are in a LDF (long distance friendship), they continue to pray for one another and stay connected. Susanna is amazed at how Esther has grown through her relationship with Soonho and is so excited for how they will continue to grow in their next stage as a married couple!</p>
+                </div>
+            </div>
+            
             <div class="block"> <!--Jiwan-->
                 <img class="party-photos" src="assets/jiwan.png" alt="">
                 <h3>Jiwan Kang</h3>
