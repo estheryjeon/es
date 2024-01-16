@@ -14,6 +14,14 @@ function closeModal(modalId) {
     document.getElementById(modalId).style.display = "none";
 }
 
+function show(url) {
+    document.getElementById("replaceme").src = 'assets/'+url;
+    document.getElementById("replaceme").style.visibility = "visible";
+}
+
+function hide() {
+    document.getElementById("replaceme").style.visibility = "hidden";;
+}
 
 // // Get the modal
 // var modal = document.getElementById("susieModal");
