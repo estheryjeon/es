@@ -58,7 +58,6 @@ label.logo {
 #desktop-nav {
   list-style: none;
   float: right;
-  display: inline-block;
 }
 
 #desktop-nav ul li {
