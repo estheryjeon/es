@@ -150,6 +150,32 @@ img {
   padding: 16px 0;
 }
 
+/*---- PHOTO GALLERY ----*/
+
+.container {
+  max-width: 1224px;
+  width: 90%;
+  margin: auto;
+  padding: 40px 0;
+}
+
+.photo-gallery {
+  display: flex;
+  gap: 10px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.pic {
+  width: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+  margin: 5px 0;
+}
+
 /*---- TYPOGRAPHY ----*/
 
 h1 { /*home page only*/
@@ -449,6 +475,9 @@ button:hover {
   }
   .modal-content {
     width: 80%;
+  }
+  .photo-gallery {
+    flex-direction: column;
   }
   
 }
