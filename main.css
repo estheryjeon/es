@@ -54,10 +54,16 @@ label.logo {
 #menubtn {
   float: right;
   display: none;
+  border: none;
 }
 
 #close {
   float: right;
+  border: none;
+}
+
+img.icon {
+  width: 16px;
 }
 
 #desktop-nav {
@@ -203,7 +209,8 @@ p {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  padding-top: 50px; /* Location of the box */
+  padding-bottom: 50px;
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -215,19 +222,19 @@ p {
 
 /* Modal Content */
 .modal-content {
-  background-color: #fefefe;
+  background-color: #FFFEF9;
   margin: auto;
-  padding: 20px;
+  padding: 24px;
   border: 1px solid #888;
   width: 50%;
+  border-radius: 10px;
 }
 
 /* The Close Button */
 .close {
   color: #aaaaaa;
   float: right;
-  font-size: 28px;
-  font-weight: bold;
+  padding-bottom: 16px;
 }
 
 .close:hover,
@@ -236,8 +243,6 @@ p {
   text-decoration: none;
   cursor: pointer;
 }
-
-
 
 
 /*---- FORM ----*/
@@ -294,13 +299,10 @@ button {
   color: #000000;
   border: solid #000000 1px;
   text-align: center;
-  /* border-radius: 0.5em; */
   border-radius: 10px;
-
   font-family: 'Work Sans', sans-serif;
   font-size: 16px;
   font-weight: 300;
-  margin-bottom: 8px;
 }
 
 button:hover {
@@ -445,11 +447,14 @@ button:hover {
   #mainDialog > * {
     padding: 8px 0;
   }
+  .modal-content {
+    width: 80%;
+  }
   
 }
-@media (max-width: 425px) {
+@media (max-width: 480px) {
   header { padding: 5%; }
-  main { padding: 5%; }
+  main { padding: 24px; }
   #desktop-nav { display: none; }
   #menubtn { display: inline-block; }
   h1 { font-size: 4em; }
@@ -467,6 +472,16 @@ button:hover {
   }
   #mainDialog > * {
     padding: 8px 0;
+  }
+  .modal {
+    padding: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+  }
+  
+  .modal-content {
+    width: 100%;
+    border-radius: 0;
   }
 
 }
