@@ -23,6 +23,7 @@ function hide() {
     document.getElementById("replaceme").style.visibility = "hidden";;
 }
 
+/* For gallery */
 function populateGallery() {
     var myElements = document.getElementsByClassName("pic");
 
@@ -37,6 +38,15 @@ document.addEventListener("DOMContentLoaded", function(e) {
     populateGallery();
   });
 
+/* For home */
+function randomPhoto () {
+    var randomNum = Math.floor(Math.random() * (4));
+    document.getElementById("homePhoto").src = 'assets/homePhotos/home-' + (randomNum) + '.jpg';
+    console.log(homePhoto.src);
+}
+
+window.onload = randomPhoto;
+    
 // // Get the modal
 // var modal = document.getElementById("susieModal");
               
