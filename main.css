@@ -180,22 +180,6 @@ img {
   margin: 5px 0;
 }
 
-/*---- PHOTO GALLERY ----*/
-
-#preloadedImages
-{
-    width: 0px;
-    height: 0px;
-    display: inline;
-    background-image: url(assets/story/brian-angela.jpg);
-    background-image: url(assets/story/climbing.jpg);
-    background-image: url(assets/story/community.jpg);
-    background-image: url(assets/story/dynjandi.jpg);
-    background-image: url(assets/story/elixr.jpg);
-    background-image: url();
-}
-
-
 /*---- TYPOGRAPHY ----*/
 
 h1 { /*home page only*/
