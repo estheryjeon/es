@@ -43,6 +43,10 @@ body {
   font-weight: 200;
 }
 
+.home-pic {
+  display: block;
+}
+
 /*---- HEADER ----*/
 
 label.logo {
