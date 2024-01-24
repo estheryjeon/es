@@ -340,7 +340,10 @@ button {
 }
 
 button:hover {
-  cursor: grab;
+  cursor: pointer;
+  color: #898989;
+  border: solid #898989 1px;
+
 }
 
 .big-button {
