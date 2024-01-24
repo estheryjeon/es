@@ -346,6 +346,8 @@ button:hover {
 .big-button {
   margin-right: 16px;
   padding: 8px 24px;
+  width: 100%;
+  margin-bottom: 24px;
 }
 
 #mobile-nav #rsvpBtn {

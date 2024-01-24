@@ -1,73 +1,54 @@
+/* For navigation */
 function openMenu() {
     document.getElementById("mobile-nav").style.display = "block";
 }
-
 function closeMenu() {
     document.getElementById("mobile-nav").style.display = "none";
 }
 
+/* For modals */
 function openModal(modalId) {
     document.getElementById(modalId).style.display = "block";
 }
-
 function closeModal(modalId) {
     document.getElementById(modalId).style.display = "none";
 }
+function clickOut(modalId) {
+    var modal = document.getElementById(modalId);
+    window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+}
 
+/* For Story */
 function show(url) {
     document.getElementById("replaceme").src = 'assets/story/'+url;
     document.getElementById("replaceme").style.visibility = "visible";
 }
-
 function hide() {
     document.getElementById("replaceme").style.visibility = "hidden";;
 }
 
-/* For gallery */
+/* For Gallery */
 function populateGallery() {
     var myElements = document.getElementsByClassName("pic");
-
     for (let i = 0; i < myElements.length; i++) {
         myElements[i].src = 'assets/galleryPhotos/gallery-' + (i+1) + '.jpg';
     }
-
 }
 
-document.addEventListener("DOMContentLoaded", function(e) {
-    populateGallery();
-  });
+if (document.URL.includes("fuji-minolta")) {
+    window.onload = populateGallery;
+}
 
-/* For home */
-function randomPhoto () {
+/* For Home */
+function randomPhoto() {
     var randomNum = Math.floor(Math.random() * (4));
-    document.getElementById("homePhoto").src = 'assets/homePhotos/home-' + (randomNum) + '.jpg';
-    console.log(homePhoto.src);
+    document.getElementById("homePhoto").src = 'assets/homePhotos/home-' + randomNum + '.jpg';
 }
 
-window.onload = randomPhoto;
-    
-// // Get the modal
-// var modal = document.getElementById("susieModal");
-              
-// // Get the button that opens the modal
-// var btn = document.getElementById("susieBtn");
-
-// // Get the <span> element that closes the modal
-// var span = document.getElementsByClassName("close")[0];
-
-// // When the user clicks the button, open the modal 
-// btn.onclick = function() {
-//   modal.style.display = "block";
-// }
-
-// // When the user clicks on <span> (x), close the modal
-// span.onclick = function() {
-//   modal.style.display = "none";
-// }
-
-// // When the user clicks anywhere outside of the modal, close it
-// window.onclick = function(event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// }
+if (document.URL.includes("potrerohill")) {
+    window.onload = randomPhoto;
+}
