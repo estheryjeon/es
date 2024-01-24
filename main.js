@@ -15,7 +15,7 @@ function closeModal(modalId) {
 }
 
 function show(url) {
-    document.getElementById("replaceme").src = 'assets/'+url;
+    document.getElementById("replaceme").src = 'assets/story/'+url;
     document.getElementById("replaceme").style.visibility = "visible";
 }
 
@@ -28,7 +28,6 @@ function populateGallery() {
     var myElements = document.getElementsByClassName("pic");
 
     for (let i = 0; i < myElements.length; i++) {
-        // myElements[i].src = 'assets/galleryPhotos/gallery-1.jpg';
         myElements[i].src = 'assets/galleryPhotos/gallery-' + (i+1) + '.jpg';
     }
 
